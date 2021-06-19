@@ -1,0 +1,21 @@
+CREATE TABLE weather (
+	city varchar(200),
+	temp_lo int,
+	temp_hi int,
+	date date
+);
+
+DROP TABLE weather;
+
+INSERT INTO weather(temp_lo, temp_hi, city, date) 
+VALUES (20, 26, 'Miami', '2021-06-16');
+
+INSERT into weather VALUES('Moscow',13 ,20  , '2021-06-16');
+
+SELECT * FROM weather
+
+
+
+SELECT city, temp_lo, temp_hi FROM weather
+
+SELECT city, date FROM weather
